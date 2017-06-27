@@ -43,7 +43,7 @@ class PokeList extends React.Component
 											spices   : poke.species,
 											types    : poke.type
 										 };
-							return <PokeListPure {...props}/>
+							return <PokeListPure key={poke.id} {...props}/>
 						})}
 					</div>
 			   );
